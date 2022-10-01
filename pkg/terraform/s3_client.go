@@ -1,4 +1,4 @@
-package terraform
+package ke_terraform
 
 import (
 	"context"

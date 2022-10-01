@@ -5,5 +5,5 @@ import (
 )
 
 func getBucketObject() {
-	log.Printf(&terraform.getBucketObject())
+	log.Printf(&ke_terraform.getBucketObject())
 }
