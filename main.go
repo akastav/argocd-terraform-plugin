@@ -2,6 +2,8 @@ package main
 
 import (
 	"os"
+
+	"github.com/akastav/argocd-terraform-plugin/cmd"
 )
 
 func main() {
