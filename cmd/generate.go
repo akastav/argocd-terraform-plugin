@@ -7,10 +7,10 @@ import (
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/config"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/kube"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/config"
+	"github.com/akastav/argocd-terraform-plugin/pkg/kube"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

@@ -5,7 +5,7 @@ In order to use the plugin in Argo CD you have 4 distinct options:
 - Installation via `argocd-cm` ConfigMap
 
     - Download AVP in a volume and control everything as Kubernetes manifests
-        - Available as a pre-built Kustomize app: <https://github.com/argoproj-labs/argocd-vault-plugin/blob/main/manifests/cmp-configmap>
+        - Available as a pre-built Kustomize app: <https://github.com/akastav/argocd-terraform-plugin/blob/main/manifests/cmp-configmap>
 
     - Create a custom `argocd-repo-server` image with AVP and supporting tools pre-installed
 
@@ -13,7 +13,7 @@ In order to use the plugin in Argo CD you have 4 distinct options:
 
     - Download AVP and supporting tools into a volume and control everything as Kubernetes manifests, using an off-the-shelf sidecar image
 
-        - Available as a pre-built Kustomize app: <https://github.com/argoproj-labs/argocd-vault-plugin/blob/main/manifests/cmp-sidecar>
+        - Available as a pre-built Kustomize app: <https://github.com/akastav/argocd-terraform-plugin/blob/main/manifests/cmp-sidecar>
 
     - Create a custom sidecar image with AVP and supporting tools pre-installed
 
@@ -84,7 +84,7 @@ spec:
         args:
           - >-
             wget -O argocd-vault-plugin
-            https://github.com/argoproj-labs/argocd-vault-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64 &&
+            https://github.com/akastav/argocd-terraform-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64 &&
             chmod +x argocd-vault-plugin &&
             mv argocd-vault-plugin /custom-tools/
         volumeMounts:
@@ -117,7 +117,7 @@ RUN apt-get update && \
 # Install the AVP plugin (as root so we can copy to /usr/local/bin)
 ENV AVP_VERSION=0.2.2
 ENV BIN=argocd-vault-plugin
-RUN curl -L -o ${BIN} https://github.com/argoproj-labs/argocd-vault-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64
+RUN curl -L -o ${BIN} https://github.com/akastav/argocd-terraform-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64
 RUN chmod +x ${BIN}
 RUN mv ${BIN} /usr/local/bin
 
@@ -194,7 +194,7 @@ spec:
         command: [sh, -c]
         args:
           - >-
-            curl -L https://github.com/argoproj-labs/argocd-vault-plugin/releases/download/v$(AVP_VERSION)/argocd-vault-plugin_$(AVP_VERSION)_linux_amd64 -o argocd-vault-plugin &&
+            curl -L https://github.com/akastav/argocd-terraform-plugin/releases/download/v$(AVP_VERSION)/argocd-vault-plugin_$(AVP_VERSION)_linux_amd64 -o argocd-vault-plugin &&
             chmod +x argocd-vault-plugin &&
             mv argocd-vault-plugin /custom-tools/
         volumeMounts:
@@ -276,7 +276,7 @@ RUN apt-get update && \
 # Install the AVP plugin (as root so we can copy to /usr/local/bin)
 ENV AVP_VERSION=1.11.0
 ENV BIN=argocd-vault-plugin
-RUN curl -L -o ${BIN} https://github.com/argoproj-labs/argocd-vault-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64
+RUN curl -L -o ${BIN} https://github.com/akastav/argocd-terraform-plugin/releases/download/v${AVP_VERSION}/argocd-vault-plugin_${AVP_VERSION}_linux_amd64
 RUN chmod +x ${BIN}
 RUN mv ${BIN} /usr/local/bin
 
@@ -322,7 +322,7 @@ spec:
 ## Installing locally
 ### On Linux or macOS via Curl
 ```
-curl -Lo argocd-vault-plugin https://github.com/argoproj-labs/argocd-vault-plugin/releases/download/{version}/argocd-vault-plugin_{version}_{linux|darwin}_{amd64|arm64|s390x}
+curl -Lo argocd-vault-plugin https://github.com/akastav/argocd-terraform-plugin/releases/download/{version}/argocd-vault-plugin_{version}_{linux|darwin}_{amd64|arm64|s390x}
 
 chmod +x argocd-vault-plugin
 

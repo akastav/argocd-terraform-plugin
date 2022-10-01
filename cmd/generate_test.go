@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/helpers"
+	"github.com/akastav/argocd-terraform-plugin/pkg/helpers"
 	"github.com/hashicorp/vault/api"
 	"github.com/hashicorp/vault/vault"
 )

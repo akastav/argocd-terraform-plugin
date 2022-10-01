@@ -2,7 +2,8 @@ package vault
 
 import (
 	"fmt"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"github.com/hashicorp/vault/api"
 )
 

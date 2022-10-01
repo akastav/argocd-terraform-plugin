@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/1Password/connect-sdk-go/connect"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 )
 
 // OnePassword is a struct for working with a 1Password Connect backend

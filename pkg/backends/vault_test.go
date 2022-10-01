@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/auth/vault"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/backends"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/helpers"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/auth/vault"
+	"github.com/akastav/argocd-terraform-plugin/pkg/backends"
+	"github.com/akastav/argocd-terraform-plugin/pkg/helpers"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
 )
 
 func TestVaultLogin(t *testing.T) {

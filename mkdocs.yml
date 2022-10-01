@@ -31,4 +31,4 @@ nav:
   - Upgrading:
      - v0.x to v1.x: 0x-1x.md
   - Compatibility: compatibility.md
-  - Releases ⧉: https://github.com/argoproj-labs/argocd-vault-plugin/releases
+  - Releases ⧉: https://github.com/akastav/argocd-terraform-plugin/releases

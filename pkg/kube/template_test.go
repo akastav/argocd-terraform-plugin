@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/helpers"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/helpers"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 )

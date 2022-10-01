@@ -3,11 +3,12 @@ package backends
 import (
 	"context"
 	"fmt"
-	"github.com/Azure/azure-sdk-for-go/profiles/latest/keyvault/keyvault"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
 	"path"
 	"strings"
 	"time"
+
+	"github.com/Azure/azure-sdk-for-go/profiles/latest/keyvault/keyvault"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 )
 
 // AzureKeyVault is a struct for working with an Azure Key Vault backend

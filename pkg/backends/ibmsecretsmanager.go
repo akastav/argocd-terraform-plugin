@@ -7,8 +7,8 @@ import (
 
 	"github.com/IBM/go-sdk-core/v5/core"
 	ibmsm "github.com/IBM/secrets-manager-go-sdk/secretsmanagerv1"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 )
 
 var IBMPath, _ = regexp.Compile(`ibmcloud/(?P<type>.+)/secrets/groups/(?P<groupId>.+)`)

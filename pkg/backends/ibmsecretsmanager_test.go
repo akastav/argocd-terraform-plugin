@@ -8,8 +8,8 @@ import (
 
 	"github.com/IBM/go-sdk-core/v5/core"
 	ibmsm "github.com/IBM/secrets-manager-go-sdk/secretsmanagerv1"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/backends"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/backends"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
 )
 
 type MockIBMSMClient struct {

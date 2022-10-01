@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"github.com/googleapis/gax-go/v2"
 	secretmanagerpb "google.golang.org/genproto/googleapis/cloud/secretmanager/v1"
 )

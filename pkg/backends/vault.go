@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/types"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/types"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"github.com/hashicorp/vault/api"
 )
 

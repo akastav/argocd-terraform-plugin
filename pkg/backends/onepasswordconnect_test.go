@@ -6,7 +6,7 @@ import (
 
 	"github.com/1Password/connect-sdk-go/connect"
 	"github.com/1Password/connect-sdk-go/onepassword"
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/backends"
+	"github.com/akastav/argocd-terraform-plugin/pkg/backends"
 )
 
 type mockOnePasswordConnectClient struct {

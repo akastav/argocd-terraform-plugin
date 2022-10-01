@@ -3,7 +3,7 @@ package backends
 import (
 	"fmt"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"k8s.io/apimachinery/pkg/util/yaml"
 )
 

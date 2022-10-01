@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/config"
+	"github.com/akastav/argocd-terraform-plugin/pkg/config"
 	"github.com/spf13/viper"
 )
 

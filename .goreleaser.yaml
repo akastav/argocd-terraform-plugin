@@ -5,9 +5,9 @@ builds:
     flags: "-trimpath"
     ldflags: >-
       -s -w
-      -X "github.com/argoproj-labs/argocd-vault-plugin/version.Version={{.Tag}}"
-      -X "github.com/argoproj-labs/argocd-vault-plugin/version.BuildDate={{.Date}}"
-      -X "github.com/argoproj-labs/argocd-vault-plugin/version.CommitSHA={{.Commit}}"
+      -X "github.com/akastav/argocd-terraform-plugin/version.Version={{.Tag}}"
+      -X "github.com/akastav/argocd-terraform-plugin/version.BuildDate={{.Date}}"
+      -X "github.com/akastav/argocd-terraform-plugin/version.CommitSHA={{.Commit}}"
     env:
       - "CGO_ENABLED=0"
     goos:

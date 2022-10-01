@@ -8,7 +8,7 @@ import (
 
 	yaml "sigs.k8s.io/yaml"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/backends"
+	"github.com/akastav/argocd-terraform-plugin/pkg/backends"
 )
 
 func TestLocalSecretManagerGetSecretsJson(t *testing.T) {

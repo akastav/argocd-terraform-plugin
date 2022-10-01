@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/argoproj-labs/argocd-vault-plugin/pkg/utils"
+	"github.com/akastav/argocd-terraform-plugin/pkg/utils"
 	"github.com/yandex-cloud/go-genproto/yandex/cloud/lockbox/v1"
 )
 
